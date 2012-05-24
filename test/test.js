@@ -1,7 +1,5 @@
 var http = require('http');
 var server = require('../lib/server');
-var sio = require('socket.io');
-var browser = require('socket.io-client');
 
 var app = http.createServer();
 server.listen(app);

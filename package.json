@@ -16,7 +16,7 @@
   "dependencies": {
     "socket.io-client" : "*",
     "socket.io"        : "~0.9",
-    "browserify"       : "*"
+    "browserify"       : "https://github.com/toots/node-browserify/tarball/master"
     },
   "devDependencies": {}
 }

@@ -12,7 +12,7 @@ server.listen(8080, '127.0.0.1');
 //s = client.connect('http://127.0.0.1:8080');
 //s.send('messsage', 'foo')
 
-var browser = require('../lib/simudp').createSocket('udp4', '127.0.0.1:8080/simudp');
+var browser = require('../lib/simudp').createSocket('udp4', '127.0.0.1:8080');
 browser.bind();
 var udp = require('dgram').createSocket('udp4');
 udp.bind();

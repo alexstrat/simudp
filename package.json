@@ -2,7 +2,7 @@
   "author": "alexstrat",
   "name": "simudp",
   "description": "dgram module for the browser thru a proxy based on socket.io",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "homepage": "https://github.com/alexstrat/simudp",
   "repository": {
     "type": "git",

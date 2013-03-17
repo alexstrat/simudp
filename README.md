@@ -41,7 +41,7 @@ socket.on('message', function(buf, rinfo) {
 
 ### Doc
 
-Read the sources ([[client]](https://github.com/alexstrat/simudp/blob/master/lib/simudp.js) and [[proxy]](https://github.com/alexstrat/simudp/blob/master/lib/server.js)) or [ask around](https://github.com/alexstrat/simudp/issues).
+Read the sources ([client](https://github.com/alexstrat/simudp/blob/master/lib/simudp.js) and [proxy](https://github.com/alexstrat/simudp/blob/master/lib/server.js)) or [ask around](https://github.com/alexstrat/simudp/issues).
 
 ### Browserify support
 

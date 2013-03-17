@@ -12,21 +12,35 @@
   var client = SimUDP.createSocket('udp4');
   client.bind();
 
+  var client2 = SimUDP.createSocket('udp4');
+  client2.bind();
+
   client.on('error', function(d) {
     console.error('client', d);
+  });
+  client2.on('error', function(d) {
+    console.error('client2', d);
   });
 
   client.on('message', function(msg) {
     console.log('client : received ', msg.toString());
   });
+  client2.on('message', function(msg) {
+    console.log('client2 : received ', msg.toString());
+  });
 
   client.on('listening', function() {
     console.log('client : listening on', client.address());
+  });
+  client2.on('listening', function() {
+    console.log('client2 : listening on', client2.address());
   });
 
   var salut = 'Salut';
   console.log('client : sending', salut);
   client.send(salut, 0, salut.length, 3456, 'localhost');
+  console.log('client2 : sending', salut);
+  client2.send(salut, 0, salut.length, 3456, 'localhost');
 
   </script>
 </body>

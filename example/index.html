@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example SimUDP</title>
+  <script src="/simudp/SimUDP.js"></script>
+</head>
+<body>
+  Hello
+  <script>
+
+  var client = SimUDP.createSocket('udp4');
+  client.bind();
+
+  client.on('error', function(d) {
+    console.error('client', d);
+  });
+
+  client.on('message', function(msg) {
+    console.log('client : received ', msg.toString());
+  });
+
+  client.on('listening', function() {
+    console.log('client : listening on', client.address());
+  });
+
+  var salut = 'Salut';
+  console.log('client : sending', salut);
+  client.send(salut, 0, salut.length, 3456, 'localhost');
+
+  </script>
+</body>
+</html>

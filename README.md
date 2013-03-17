@@ -1,4 +1,3 @@
-
 **Simudp** : udp for the browser.
 
 Imitates exactly the [dgram](http://nodejs.org/api/dgram.html) API in the browser and backed by [socket.io](http://socket.io)/UDP proxy.
@@ -42,7 +41,7 @@ socket.on('message', function(buf, rinfo) {
 
 ### Doc
 
-Read the [source](https://github.com/alexstrat/simudp/blob/master/lib/simudp.js) or [ask around](https://github.com/alexstrat/simudp/issues).
+Read the sources ([[client]](https://github.com/alexstrat/simudp/blob/master/lib/simudp.js) and [[proxy]](https://github.com/alexstrat/simudp/blob/master/lib/server.js)) or [ask around](https://github.com/alexstrat/simudp/issues).
 
 ### Browserify support
 
